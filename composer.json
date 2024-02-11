@@ -1,0 +1,21 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/your/repository"
+        }
+    ],
+    "require": {
+        "your/package": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "YourNamespace\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php artisan optimize",
+        "post-update-cmd": "php artisan optimize"
+    }
+}
